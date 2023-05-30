@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="es" style="background: darkgray;">
+    <head>
+        <title>Desafio-Encriptador</title>
+        <meta charset="UTF-8" >
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="estilo.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <div class="principal">
+        <aside class="area-encript">
+            <textarea placeholder="Teclee el texto aquí" name="txt" class="texto" id="txtEnc" cols="40" rows="20"></textarea>
+        </aside>
+        <main class="area-decript">
+            <div class="contenedor">
+            <textarea cols="40" rows="20"  id="mensaje" style="visibility: hidden;" readonly class="mensaje"></textarea>
+            <div class="mensFin" id="Cuad_sal">
+                <img class="img" src="imgs/mono.png" id="imgs" alt="Mono que se muestra en error">
+                <h2 id="menSal">Ningún mensaje fue encontrado</h2>
+                <p id="parSal">Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+            </div>
+        </main>
+    </div>
+    <div class="instruc">
+        <p>Solo letras minúsculas</p>
+        <div class="botones">
+            <input type="button" class="btnEnc" value="Encriptar" onclick="encriptar()">
+            <input type="button" class="btnDes" value="Desencriptar" onclick="desencriptar()">
+        </div>
+    </div>
+    <footer></footer>
+</html>
+
+<script src="index.js">
+
+</script>
